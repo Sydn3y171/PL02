@@ -10,18 +10,28 @@ import ply.yacc as yacc
 
 # Lista de tokens
 tokens = (
-    'FUNCAO', 'ID', 'NUMBER', 'COLON', 'COMMA', 'SEMICOLON', 'ASSIGN', 'LPAREN', 'RPAREN', 'PLUS', 'TIMES'
+    'FUNCAO', 
+    'ID',
+    'NUMBER', 
+    'COLON', 
+    'VIRGULA', 
+    'PONTOVIRGULA', 
+    'IGUAL', 
+    'LPAREN', 
+    'RPAREN', 
+    'PLUS', 
+    'MULTIPLICAR'
 )
 
 # Definições de tokens
 t_COLON = r':'
-t_COMMA = r','
-t_SEMICOLON = r';'
-t_ASSIGN = r'='
+t_VIRGULA = r','
+t_PONTOVIRGULA = r';'
+t_IGUAL = r'='
 t_LPAREN = r'\('
 t_RPAREN = r'\)'
 t_PLUS = r'\+'
-t_TIMES = r'\*'
+t_MULTIPLICAR = r'\*'
 
 def t_FUNCAO(t):
     r'FUNCAO'
